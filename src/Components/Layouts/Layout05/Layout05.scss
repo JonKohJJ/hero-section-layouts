@@ -1,0 +1,51 @@
+.layout05-div{
+
+    display: flex;
+    justify-content: center;
+
+    .outer-container{
+
+        // outline: 1px solid blue;
+        width: 100vw;
+        max-width: 1800px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .base-text{
+            // outline: 1px solid green;
+            max-width: 300px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .inner-container{
+
+            // outline: 1px solid red;
+            max-width: 800px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .h1{
+                position: relative;
+                top: 120px;
+            }
+
+            img{
+                display: block;
+                width: 100%;
+            }
+
+        }
+
+    }
+
+
+}

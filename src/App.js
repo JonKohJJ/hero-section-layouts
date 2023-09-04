@@ -10,6 +10,9 @@ import Layout01 from './Components/Layouts/Layout01/Layout01.js'
 import Layout02 from './Components/Layouts/Layout02/Layout02.js'
 import Layout03 from './Components/Layouts/Layout03/Layout03.js'
 import Layout04 from './Components/Layouts/Layout04/Layout04.js'
+import Layout05 from './Components/Layouts/Layout05/Layout05.js'
+import Layout06 from './Components/Layouts/Layout06/Layout06.js'
+import Layout07 from './Components/Layouts/Layout07/Layout07.js'
 
 import Typography from './Components/Typograhpy/Typography.js'
 import Error from './Components/Error/Error.js'
@@ -24,6 +27,9 @@ function App() {
           <Route path='/layout02' element={<Layout02 />}></Route>
           <Route path='/layout03' element={<Layout03 />}></Route>
           <Route path='/layout04' element={<Layout04 />}></Route>
+          <Route path='/layout05' element={<Layout05 />}></Route>
+          <Route path='/layout06' element={<Layout06 />}></Route>
+          <Route path='/layout07' element={<Layout07 />}></Route>
           <Route path='/typography' element={<Typography />}></Route>
           <Route path='*' element={<Error />}></Route>
         </Routes>
