@@ -2,7 +2,7 @@ import React from 'react'
 import './Layout04.scss'
 
 // Images
-import heroImage from './Images/heroImage2.jpg'
+import heroImage from './Images/heroImage.jpg'
 
 export default function Layout04() {
   return (

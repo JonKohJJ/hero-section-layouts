@@ -30,6 +30,11 @@ export default function Navbar() {
             <Link to="/layout05" onClick={() => setActive(false)}>Layout 05</Link>
             <Link to="/layout06" onClick={() => setActive(false)}>Layout 06</Link>
             <Link to="/layout07" onClick={() => setActive(false)}>Layout 07</Link>
+            <Link to="/layout08" onClick={() => setActive(false)}>Layout 08</Link>
+            <Link to="/layout09" onClick={() => setActive(false)}>Layout 09</Link>
+            <Link to="/layout10" onClick={() => setActive(false)}>Layout 010</Link>
+            <Link to="/layout11" onClick={() => setActive(false)}>Layout 011</Link>
+            <Link to="/layout12" onClick={() => setActive(false)}>Layout 012</Link>
             <Link to="/typography" onClick={() => setActive(false)}>Typography</Link>
           </div>
         </>

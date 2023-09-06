@@ -2,7 +2,7 @@ import React from 'react'
 import './Layout03.scss'
 
 // Images
-import img1 from './Images/img1.jpg'
+import img1 from './Images/heroImage.jpg'
 
 export default function Layout03() {
   return (
@@ -10,7 +10,7 @@ export default function Layout03() {
         <div className='container'>
 
             <div className='top'>
-                <p className='h3'>Lorem ipsum odor amet, consectetuer adipiscing elit</p>
+                <p className='h1'>Lorem ipsum odor amet, consectetuer</p>
                 <div>
                     <p className='base-text'>Non etiam tempor id arcu magna ante eget. Nec per posuere cubilia cras porttitor condimentum
     orci suscipit. Leo maecenas in tristique</p>

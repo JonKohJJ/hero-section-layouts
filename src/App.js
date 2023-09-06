@@ -13,6 +13,11 @@ import Layout04 from './Components/Layouts/Layout04/Layout04.js'
 import Layout05 from './Components/Layouts/Layout05/Layout05.js'
 import Layout06 from './Components/Layouts/Layout06/Layout06.js'
 import Layout07 from './Components/Layouts/Layout07/Layout07.js'
+import Layout08 from './Components/Layouts/Layout08/Layout08'
+import Layout09 from './Components/Layouts/Layout09/Layout09'
+import Layout10 from './Components/Layouts/Layout10/Layout10'
+import Layout11 from './Components/Layouts/Layout11/Layout11.js'
+import Layout12 from './Components/Layouts/Layout12/Layout12'
 
 import Typography from './Components/Typograhpy/Typography.js'
 import Error from './Components/Error/Error.js'
@@ -30,6 +35,11 @@ function App() {
           <Route path='/layout05' element={<Layout05 />}></Route>
           <Route path='/layout06' element={<Layout06 />}></Route>
           <Route path='/layout07' element={<Layout07 />}></Route>
+          <Route path='/layout08' element={<Layout08 />}></Route>
+          <Route path='/layout09' element={<Layout09 />}></Route>
+          <Route path='/layout10' element={<Layout10 />}></Route>
+          <Route path='/layout11' element={<Layout11 />}></Route>
+          <Route path='/layout12' element={<Layout12 />}></Route>
           <Route path='/typography' element={<Typography />}></Route>
           <Route path='*' element={<Error />}></Route>
         </Routes>
