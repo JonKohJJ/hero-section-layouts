@@ -16,7 +16,7 @@ export default function Navbar() {
       {active === false ? 
         <>
           <FontAwesomeIcon className='icons' onClick={() => setActive(true)} icon={faBars} />
-          <p className='h5'>Hero Layouts</p>
+          <Link to="/" onClick={() => setActive(false)}><p className='h5'>Hero Layouts</p></Link>
         </>
         :
         <>
