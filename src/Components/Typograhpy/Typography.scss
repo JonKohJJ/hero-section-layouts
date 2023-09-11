@@ -2,55 +2,102 @@
     /* Golden Ratio */
     --golden-ratio: 1.618;
     --fs-caption: calc(var(--fs-base) / var(--golden-ratio));
-    --fs-base: 18px;
+    --fs-base: 17px;
     --fs-h5: calc(var(--fs-base) * var(--golden-ratio));
     --fs-h3: calc(var(--fs-h5) * var(--golden-ratio));
     --fs-h1: calc(var(--fs-h3) * var(--golden-ratio));
 }
 
-
 .typography{
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-
     .container{
-        padding: 50px;
-        max-width: 1024px;
-
-        p{
-            margin-bottom: 30px; 
+        div{
+            padding: 25px 0;
+            border-bottom: 1px dotted #dedddc;
         }
         
     }
 }
-
 .caption{
     font-size: var(--fs-caption);
     line-height: var(--golden-ratio);
-    font-weight: 300;
+    font-weight: 400;
+    &.bold{
+        font-weight: 500;
+    }
+}
+.typography-info-text{
+    color: rgba(36,28,21,0.65);
 }
 .base-text{
     font-size: var(--fs-base);
     line-height: var(--golden-ratio);
-    font-weight: 300;
+    font-weight: 400;
+    &.bold{
+        font-weight: 500;
+    }
+    &.light{
+        font-weight: 300;
+    }
 }
 .h5{
     font-size: var(--fs-h5);
     line-height: var(--golden-ratio);
-    font-weight: 500;
+    font-weight: 400;
+    &.bold{
+        font-weight: 500;
+    }
+
 }
 .h3{
     font-size: var(--fs-h3);
     line-height: calc(var(--golden-ratio) / 1.25); 
-    font-weight: 600; 
+    font-weight: 400; 
+    &.bold{
+        font-weight: 500;
+    }
 }
 .h1{
     font-size: var(--fs-h1);
     line-height: calc(var(--golden-ratio) / 1.5);  
-    font-weight: 700;
-    
+    font-weight: 400;
+    &.bold{
+        font-weight: 500;
+    }
 }
 
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* tablets */
+@media ( 641px <= width <= 960px) {
+    .container {
+        width: 90%;
+        background-color: rgb(255, 164, 164);
+    }
+}
+
+/* laptops and above */
+@media (960px <= width) {
+    .container {
+        width: 90%;
+        max-width: 1024px;
+        background-color: rgb(170, 200, 255);
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    :root {
+        --fs-base: 19px;
+    }
+}

@@ -1,24 +1,50 @@
 import React from 'react'
 import './Typography.scss'
-import { useNavigate } from 'react-router-dom'
 
 export default function Typography() {
-
-  const navigate = useNavigate();
 
   return (
     <section className="typography">
         <div className="container">
-            {/* <p className='caption' onClick={() => {
-              navigate("/")
-            }}>back to Home</p> */}
-            <p className="h1">Massive Headline h1</p>
-            <p className="h3">Bigger Headline h3</p>
-            <p className="h5">Sub Headline h5</p>
-            <p className="base-text">
-              This is some base text at 18px. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis facilis eveniet repellat consequuntur ipsam porro maiores nesciunt distinctio nisi? Cupiditate officiis maiores qui officia maxime numquam. Impedit unde quaerat doloremque?
-            </p>
-            <p className='caption'>These are some captions, smaller than the default text</p>
+
+            <div>
+              <p className="h1">Heading h1</p>
+              <p className='typography-info-text'>(h3*1.618) ∙ Poppins ∙ Regular 400</p>
+            </div>
+
+
+            <div>
+              <p className="h3">Heading h3</p>
+              <p className='typography-info-text'>(h5*1.618) ∙ Poppins ∙ Regular 400</p>
+            </div>
+            
+
+            <div>
+              <p className="h5">Heading h5</p>
+              <p className='typography-info-text'>(body text*1.618) ∙ Poppins ∙ Regular 400</p>
+            </div>
+            
+
+            <div>
+              <p className="base-text">Body text</p>
+              <p className='typography-info-text'>17px / 19px ∙ Poppins ∙ Regular 400</p>
+            </div>
+            
+            <div>
+              <p className="base-text bold">Bold text</p>
+              <p className='typography-info-text'>17px / 19px ∙ Poppins ∙ Medium 500</p>
+            </div>
+
+            {/* <div>
+              <p className="base-text light">Body text</p>
+              <p className='typography-info-text'>19px ∙ Poppins ∙ Light 300</p>
+            </div> */}
+
+            <div>
+              <p className='caption'>Caption text</p>
+              <p className='typography-info-text'>(body text/1.618) ∙ Poppins ∙ Regular 400</p>
+            </div>
+          
         </div>
     </section>
   )
