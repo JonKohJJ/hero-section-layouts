@@ -1,15 +1,15 @@
 import React from 'react'
-import './Layout05.scss'
+import Layout05SCSS from './Layout05.module.scss'
 
 // Images
 import heroImage from './Images/heroImage.jpg'
 
 export default function Layout05() {
   return (
-    <div className='layout05-div'>
-        <div className='outer-container'>
+    <div className={Layout05SCSS["section"]}>
+        <div className={Layout05SCSS["container"]}>
 
-            <div className='inner-container'>
+            <div className={Layout05SCSS["inner-container"]}>
                 <p className='h1'>Lorem ipsum odor amet, consectetuer non etiam tempor</p>
                 <img src={heroImage}></img>
             </div>

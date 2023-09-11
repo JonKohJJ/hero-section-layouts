@@ -1,19 +1,19 @@
 import React from 'react'
-import './Layout09.scss'
+import Layout09SCSS from './Layout09.module.scss'
 
 // Images
 import heroImage from './Images/heroImage.jpg'
 
 export default function Layout09() {
   return (
-    <div className='layout09-div'>
+    <div className={Layout09SCSS["section"]}>
 
-      <div className='container'>
+      <div className={Layout09SCSS["container"]}>
 
         <p className='h1'>Lorem ipsum odor non etiam </p>
 
-        <div className='below-title'>
-            <div>
+        <div className={Layout09SCSS["below-title"]}>
+            <div className={Layout09SCSS["image-div"]}>
               <img src={heroImage}></img>
               {/* <p className='h3'>Lorem ipsum odor non etiam </p> */}
             </div>

@@ -1,0 +1,101 @@
+// Section & Container Classes
+.section{
+    min-height: 100vh;
+    .container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+}
+// Section & Container Classes - Tablets
+@media ( 641px <= width <= 960px) {
+    .container {
+        width: 90%;
+        // background-color: rgb(255, 164, 164);
+    }
+}
+// Section & Container Classes - Laptops and above
+@media (960px <= width) {
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            // background-color: rgb(170, 200, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+.section{
+    .container{
+        .inner-container{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p:nth-child(2){
+                margin-top: 30px;
+            }
+            a:first-of-type{
+                padding: 20px 80px;
+                border: 1px solid black;
+                background-color: black;
+                color: white;
+                margin-top: 30px;
+    
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .image-div{
+            width: 100%;
+            img{
+                width: 100%;
+                display: block;
+                object-fit: cover;
+                max-height: 500px;
+                margin-top: 50px;
+            }
+        }
+
+    }
+}
+
+@media ( 641px <= width <= 960px) {
+    .inner-container{
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    .image-div{
+        img{
+            max-width: 640px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media (960px <= width) {
+    .container{
+        flex-direction: column;
+        .inner-container{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    }
+}

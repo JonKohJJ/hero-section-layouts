@@ -1,5 +1,5 @@
 import React from 'react'
-import './Layout06.scss'
+import Layout06SCSS from './Layout06.module.scss'
 
 // Images
 import heroImage from './Images/heroImage.jpg'
@@ -7,17 +7,20 @@ import heroImage from './Images/heroImage.jpg'
 
 export default function Layout06() {
   return (
-    <div className='layout06-div'>
+    <div className={Layout06SCSS["section"]}>
 
-        <div className='container'>
+        <div className={Layout06SCSS["container"]}>
 
-            <div className='inner-container'>
+            <div className={Layout06SCSS["inner-container"]}>
                 <p className='h1'>Lorem ipsum odor amet, consectetuer</p>
                 <p className='base-text'>Non etiam tempor id arcu magna ante eget. Nec per posuere cubilia cras porttitor. Non etiam tempor id arcu magna ante eget. Nec per posuere cubilia cras porttitor</p>
                 <a className='button'>Lorem</a>
             </div>
             
-            <img src={heroImage}></img>
+            <div className={Layout06SCSS["image-div"]}>
+              <img src={heroImage}></img>
+            </div>
+            
         </div>
 
     </div>

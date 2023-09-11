@@ -1,0 +1,109 @@
+// Section & Container Classes
+.section{
+    min-height: 100vh;
+    .container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+}
+// Section & Container Classes - Tablets
+@media ( 641px <= width <= 960px) {
+    .container {
+        width: 90%;
+        // background-color: rgb(255, 164, 164);
+    }
+}
+// Section & Container Classes - Laptops and above
+@media (960px <= width) {
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            // background-color: rgb(170, 200, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+.left{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    p{
+        margin-bottom: 30px;
+    }
+    .button{
+        padding: 20px 80px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        margin-top: 10px;
+    }
+    .button:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.right{
+    width: 100%;
+    max-height: 400px;
+    display: flex;
+    img{
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+/* tablets */
+@media ( 641px <= width <= 960px) {
+    .left{
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+}
+
+/* laptops and above */
+@media (960px <= width) {
+
+    .section{
+        .container{
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    .left{
+        text-align: left !important;
+        align-items: flex-start !important;
+        padding-bottom: 0 !important;
+    }
+
+    .right{
+        padding-left: 50px;
+        min-height: 500px;
+    }
+    
+}

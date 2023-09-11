@@ -1,17 +1,20 @@
 import React from 'react'
-import './Layout04.scss'
+import Layout04SCSS from './Layout04.module.scss'
 
 // Images
 import heroImage from './Images/heroImage.jpg'
 
 export default function Layout04() {
   return (
-    <div className='layout04-div'>
-        <div className='container'>
+    <div className={Layout04SCSS["section"]}>
+        <div className={Layout04SCSS["container"]}>
 
-          <img src={heroImage}></img>
+          <div className={Layout04SCSS["image-div"]}>
+            <img src={heroImage}></img>
+          </div>
+          
 
-          <div className='bottom'>
+          <div className={Layout04SCSS["bottom"]}>
             <p className='h1'>Lorem ipsum odor amet, consectetuer</p>
 
             <div>
