@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hero-section-layouts/static/css/main.f29108ec.css",
+    "main.js": "/hero-section-layouts/static/js/main.c8a4d57e.js",
+    "static/media/heroImage.jpg": "/hero-section-layouts/static/media/heroImage.a8cff5c133e5516cb8b1.jpg",
+    "static/media/L4.png": "/hero-section-layouts/static/media/L4.fece278d658903ed0e9c.png",
+    "static/media/L2.png": "/hero-section-layouts/static/media/L2.4f88183075635bace7a0.png",
+    "static/media/L8.png": "/hero-section-layouts/static/media/L8.bfc79ffd179b1dbb3fd2.png",
+    "static/media/L5.png": "/hero-section-layouts/static/media/L5.4d22c4be156cb06e43fe.png",
+    "static/media/L6.png": "/hero-section-layouts/static/media/L6.ee7baec323a090d47122.png",
+    "static/media/L3.png": "/hero-section-layouts/static/media/L3.d8f85c739c4aef672daf.png",
+    "static/media/L9.png": "/hero-section-layouts/static/media/L9.c0968b6b7b43f582558f.png",
+    "static/media/L7.png": "/hero-section-layouts/static/media/L7.cfd21d26c59c2c484278.png",
+    "static/media/L1.png": "/hero-section-layouts/static/media/L1.347edef1db7db577cba3.png",
+    "static/media/L10.png": "/hero-section-layouts/static/media/L10.eb6f88a7f37ff65aa1e9.png",
+    "static/media/L12.png": "/hero-section-layouts/static/media/L12.975000d66f5a737d7922.png",
+    "static/media/L11.png": "/hero-section-layouts/static/media/L11.f2df3ad9bdae7e438c94.png",
+    "index.html": "/hero-section-layouts/index.html",
+    "main.f29108ec.css.map": "/hero-section-layouts/static/css/main.f29108ec.css.map",
+    "main.c8a4d57e.js.map": "/hero-section-layouts/static/js/main.c8a4d57e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f29108ec.css",
+    "static/js/main.c8a4d57e.js"
+  ]
+}
