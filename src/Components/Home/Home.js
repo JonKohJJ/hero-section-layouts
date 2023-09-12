@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <div className={HomeSCSS["section"]}>
       <div className={HomeSCSS["container"]}>
-        <p className='h3'>Hero Layouts Examples</p>
-        <p className='base-text'>*psst! source code coming soon!</p>
+        <p className='h5'>Hero Layouts Examples</p>
+        <p className='caption'>*psst! source code coming soon!</p>
 
         <div className={HomeSCSS["grid"]}>
           <Link to="/layout01"><div class="div1"><img src={L1}></img><p className='base-text'></p></div></Link>
