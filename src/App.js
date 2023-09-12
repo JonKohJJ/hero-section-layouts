@@ -24,7 +24,7 @@ import Error from './Components/Error/Error.js'
 
 function App() {
   return (
-      <Router basename='/'>
+      <Router>
         <Navigation />
         <Routes>
           <Route path='/' element={<Home />}></Route>
