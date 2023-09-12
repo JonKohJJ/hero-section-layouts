@@ -1,6 +1,6 @@
 # Heros
 
-Enter the live site [here](https://jonkohjj.github.io/hero-section-layouts/).
+Enter the live site [https://jonkohjj.github.io/hero-section-layouts/](https://jonkohjj.github.io/hero-section-layouts/).
 
 ## Description
 
