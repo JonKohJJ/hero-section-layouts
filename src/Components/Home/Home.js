@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.scss'
+import HomeSCSS from './Home.module.scss'
 import { Link } from 'react-router-dom'
 
 // Images
@@ -19,11 +19,11 @@ import L12 from './Images/L12.png';
 
 export default function Home() {
   return (
-    <div className='home-div'>
-      <div className='container'>
+    <div className={HomeSCSS["section"]}>
+      <div className={HomeSCSS["container"]}>
         {/* <p className='h3'>Hero Layouts Examples</p> */}
 
-        <div className='grid'>
+        <div className={HomeSCSS["grid"]}>
           <Link to="/layout01"><div class="div1"><img src={L1}></img><p className='base-text'></p></div></Link>
           <Link to="/layout02"><div class="div2"><img src={L2}></img><p className='base-text'></p></div></Link>
           <Link to="/layout03"><div class="div3"><img src={L3}></img><p className='base-text'></p></div></Link>

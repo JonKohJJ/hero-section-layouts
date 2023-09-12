@@ -1,3 +1,41 @@
+// Section & Container Classes
+.section{
+    min-height: 100vh;
+    .container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+}
+// Section & Container Classes - Tablets
+@media ( 641px <= width <= 960px) {
+    .container {
+        width: 90%;
+        // background-color: rgb(255, 164, 164);
+    }
+}
+// Section & Container Classes - Laptops and above
+@media (960px <= width) {
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            // background-color: rgb(170, 200, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
 :root {
     /* Golden Ratio */
     --golden-ratio: 1.618;
@@ -7,9 +45,7 @@
     --fs-h3: calc(var(--fs-h5) * var(--golden-ratio));
     --fs-h1: calc(var(--fs-h3) * var(--golden-ratio));
 }
-
-.typography{
-    min-height: 100vh;
+.section{
     .container{
         div{
             padding: 25px 0;
@@ -28,6 +64,7 @@
 }
 .typography-info-text{
     color: rgba(36,28,21,0.65);
+    padding: 5px 0;
 }
 .base-text{
     font-size: var(--fs-base);
@@ -70,10 +107,23 @@
     :root {
         --fs-base: 19px;
     }
+    .section{
+        display: unset;
+        .container{
+            flex-direction: column;
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
     .h1{
         font-size: var(--fs-h1);
         line-height: calc(var(--golden-ratio) / 1.5);  
-        font-weight: 400;
+        font-weight: 500;
         &.bold{
             font-weight: 500;
         }

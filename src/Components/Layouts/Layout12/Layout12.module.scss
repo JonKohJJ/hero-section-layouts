@@ -60,13 +60,13 @@
                 &:nth-of-type(1){
                     position: relative;
                     top: 120px;
-                    right: -140px;
+                    right: -80px;
                     z-index: -1;
                 }
                 &:nth-of-type(3){
                     position: relative;
                     top: -120px;
-                    right: 140px;
+                    right: 80px;
                 }
             }
         }
@@ -121,6 +121,7 @@
     .section{
         .container{
             align-items: stretch;
+            position: relative;
             p{
                 max-width: 640px;
             }
